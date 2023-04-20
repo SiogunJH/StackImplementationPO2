@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33414.496
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "ConsoleApp\ConsoleApp.csproj", "{17269DC5-EB32-4BD7-8C27-AA5E07CC5CBA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Stos", "Stos\Stos.csproj", "{8BF42132-F684-44BE-A224-A91FC4072927}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StosUnitTests", "StosUnitTests\StosUnitTests.csproj", "{F4823EA7-1679-4497-B767-4C16EB4CC04B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{17269DC5-EB32-4BD7-8C27-AA5E07CC5CBA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17269DC5-EB32-4BD7-8C27-AA5E07CC5CBA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17269DC5-EB32-4BD7-8C27-AA5E07CC5CBA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17269DC5-EB32-4BD7-8C27-AA5E07CC5CBA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BF42132-F684-44BE-A224-A91FC4072927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BF42132-F684-44BE-A224-A91FC4072927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BF42132-F684-44BE-A224-A91FC4072927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BF42132-F684-44BE-A224-A91FC4072927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4823EA7-1679-4497-B767-4C16EB4CC04B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4823EA7-1679-4497-B767-4C16EB4CC04B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4823EA7-1679-4497-B767-4C16EB4CC04B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4823EA7-1679-4497-B767-4C16EB4CC04B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {52552427-71C4-4061-884C-8B6D8A6BE09A}
+	EndGlobalSection
+EndGlobal

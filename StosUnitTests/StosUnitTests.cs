@@ -7,7 +7,7 @@ namespace UnitTestProjectStos
     [TestClass]
     public class UnitTestStosChar
     {
-        private IStos<char> stos;
+        private IStos<char>? stos;
         private Random rnd = new Random();
         //zwraca znak ASCII o kodzie z zakresu 33..126
         private char RandomElement => (char)rnd.Next(33, 126);
