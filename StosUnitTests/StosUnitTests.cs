@@ -7,7 +7,7 @@ namespace UnitTestProjectStos
     [TestClass]
     public class UnitTestStosChar
     {
-        private IStos<char>? stos;
+        private IStos<char> stos;
         private Random rnd = new Random();
         //zwraca znak ASCII o kodzie z zakresu 33..126
         private char RandomElement => (char)rnd.Next(33, 126);
@@ -78,6 +78,42 @@ namespace UnitTestProjectStos
             Assert.IsTrue(stos.IsEmpty);
 
             char c = stos.Peek;
+        }
+
+        // TrimExcess
+        [DataTestMethod]
+        [DataRow(5, 2)]
+        [DataRow(123, 61)]
+        [DataRow(76, 38)]
+        [DataRow(35, 17)]
+        public void TrimExcess_Niepotrzebny(int size, int top)
+        {
+            stos = new StosWTablicy<char>(size);
+            char e = RandomElement;
+
+            for (int i = 0; i < size / 2; i++)
+                stos.Push(e);
+
+            stos.TrimExcess();
+            
+            Assert.AreEqual(stos.Count, top);
+        }
+
+        // TrimExcess
+        [DataTestMethod]
+        [DataRow(5, 4)]
+        [DataRow(123, 110)]
+        [DataRow(76, 68)]
+        [DataRow(35, 31)]
+        public void TrimExcess_Potrzebny(int size, int top)
+        {
+            stos = new StosWTablicy<char>(size);
+            char e = RandomElement;
+
+            for (int i = 0; i < size; i++)
+                stos.Push(e);
+
+            Assert.AreEqual(stos.Count, top);
         }
     }
 

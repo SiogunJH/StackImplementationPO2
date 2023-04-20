@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "Stos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/Stos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Stos.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Stos/1.0.0": {
+      "type": "project",
+      "path": "../Stos/Stos.csproj",
+      "msbuildProject": "../Stos/Stos.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "Stos >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "D:\\Users\\jakub.hojda\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Users\\jakub.hojda\\Desktop\\Programowanie\\ImplementacjaStosuPO2\\Stos\\Stos.csproj": {
+              "projectPath": "D:\\Users\\jakub.hojda\\Desktop\\Programowanie\\ImplementacjaStosuPO2\\Stos\\Stos.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
